@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Управління племенем</h1>
+    <div class="task">
+        <p> Тривалість холодної пори року: t = <input type="text" id = "t" placeholder="183" value="183"></p>
+        <p> Кількість людей: n = <input type="text" id = "n" placeholder="100" value = "100"></p>
+        <p> Інтенсивність опалення: для опалення треба 8 поліннів на день. i=<input type="text" id = "i" placeholder="8" value = "8"></p>
+        <p> Розмір поліна: радіус поліна r=<input type="text" id = "r" placeholder="0.2" value="0.2">; висота поліна h = <input type="text" id = "h" placeholder="0.5" value="0.5">; </p>
+        <p> Об'єм пшениці на 1 людину на день: a=<input type="text" id = "a" placeholder="0.2" value="0.2">; b = <input type="text" id = "b" placeholder="0.2" value="0.2">; c=<input type="text" id = "c" placeholder="0.2" value="0.2">; </p>
+        <button id = "btn">Обрахувати</button>
+        <p>Кількість поленнів, що потрібні для опалення: <input type="text" id = "all_n"></p>
+        <p>Ширина та довжина квадартного місця для зберігання дров за ввишки в 2 метри: <input type="text" id = "width_storage"></p>
+        <p>Ширина та довжина квадартного місця для зберігання пшениці за ввишки в 2 метри: <input type="text" id = "width_wheat_storage"></p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        button_var = document.getElementById("btn");
+        button_var.addEventListener("click",fnc);
+        function fnc (){
+            t_value = document.getElementById("t");
+            console.log(t_value.value);
+            n_value = document.getElementById("n");
+            console.log(n_value.value);
+            i_value = document.getElementById("i");
+            console.log(i_value.value);
+            all_value = document.getElementById("all_n");
+            all_n.value=parseInt(t_value.value)*parseInt(i_value.value)
+            r_value = document.getElementById("r");
+            console.log(r_value.value);
+            h_value = document.getElementById("h");
+            console.log(h_value.value);
+            a_value = document.getElementById("a");
+            console.log(a_value.value);
+            b_value = document.getElementById("b");
+            console.log(b_value.value);
+            c_value = document.getElementById("c");
+            console.log(c_value.value);
+            
+            width_storage_value = document.getElementById("width_storage");
+            width_storage_value.value=Math.ceil(Math.sqrt(parseInt(all_n.value)*parseFloat(r.value)/(2/parseFloat(h.value))))
+
+
+            width_wheat_storage_value = document.getElementById("width_wheat_storage");
+            width_wheat_storage_value.value=Math.ceil(Math.sqrt(parseInt(all_n.value)*parseFloat(a.value)/(2/parseFloat(a.value))))
+        }
+    </script>
+</body>
+</html>
