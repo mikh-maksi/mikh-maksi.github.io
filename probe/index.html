@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row head_row">
+            <div class = "col"><b>Рівень знання</b></div>
+            <div class = "col"><b>Завдання</b></div>
+            <div class="col"><b>Математичний запис завдання</b></div>
+            <div class="col"><b>Рівень володіння</b></div>
+        </div>
+        <div class="row">
+            <div class = "col">Рахівниця</div>
+            <div class = "col">Порахуй</div>
+            <div class="col"> <div class="tasks"><div title="1 2 3 4 5 6 7 8 9 10">від 1 до до 10 </div><div title="10 9 8 7 6 5 4 3 2 1">  від 10 до 1</div></div></div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">Додавання / віднімання</div>
+            <div class = "col">Скажи результат</div>
+            <div class="col"> <div class="tasks"><div title="5">2+3</div> <div title="8"> 12-4</div></div> </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">Множення / ділення</div>
+            <div class="col">Скажи результат </div>
+            <div class="col"><div class="tasks" title="12"><div>4*3</div> <div title="3"> 15/5</div></div> </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">
+                <div class = "sel">Дроби</div>
+            </div>
+            <div class = "col"><div class = "sel">Який це дріб</div></div>
+            <div class="col"> <div class="tasks" title="12"><div><img src ="img/fraction.png" height="70px" title ="1/5"></div><div><img src ="img/fraction2.png" height="70px"  title ="2/6"></div></div></div>
+            <div class="col">
+                <div class = "sel">
+                    <select name="level1" id="level1" class="form-select">
+                        <option>Не знаю</option>
+                        <option>Щось знаю</option>
+                        <option>Знаю добре</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">Додавання доробів з однаковими знаменниками  </div>
+            <div class = "col">
+                <div class = "sel">Який результат складання дробів</div>
+            </div>
+            <div class="col">
+                <div class="tasks"><div title="3/3">
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <mstyle displaystyle="true" scriptlevel="0">
+                      <mrow data-mjx-texclass="ORD">
+                        <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                          <mtr>
+                            <mtd>
+                              <mfrac>
+                                <mn>1</mn>
+                                <mn>3</mn>
+                              </mfrac>
+                              <mo>+</mo>
+                              <mfrac>
+                                <mn>2</mn>
+                                <mn>3</mn>
+                              </mfrac>
+                              <mo>=</mo>
+                            </mtd>
+                          </mtr>
+                        </mtable>
+                      </mrow>
+                    </mstyle>
+                  </math>
+                </div>
+                <div title = "5/6">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <mstyle displaystyle="true" scriptlevel="0">
+                          <mrow data-mjx-texclass="ORD">
+                            <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                              <mtr>
+                                <mtd>
+                                  <mfrac>
+                                    <mn>3</mn>
+                                    <mn>6</mn>
+                                  </mfrac>
+                                  <mo>+</mo>
+                                  <mfrac>
+                                    <mn>2</mn>
+                                    <mn>6</mn>
+                                  </mfrac>
+                                  <mo>=</mo>
+                                </mtd>
+                              </mtr>
+                            </mtable>
+                          </mrow>
+                        </mstyle>
+                      </math>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">Додавання доробів з різними знаменниками </div>
+            <div class = "col">
+                <div class = "sel">Який результат складання дробів</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks"><div title="3/3">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                    <mstyle displaystyle="true" scriptlevel="0">
+                      <mrow data-mjx-texclass="ORD">
+                        <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                          <mtr>
+                            <mtd>
+                              <mfrac>
+                                <mn>1</mn>
+                                <mn>5</mn>
+                              </mfrac>
+                              <mo>+</mo>
+                              <mfrac>
+                                <mn>1</mn>
+                                <mn>6</mn>
+                              </mfrac>
+                              <mo>=</mo>
+                            </mtd>
+                          </mtr>
+                        </mtable>
+                      </mrow>
+                    </mstyle>
+                  </math>
+                </div>
+                <div>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <mstyle displaystyle="true" scriptlevel="0">
+                          <mrow data-mjx-texclass="ORD">
+                            <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                              <mtr>
+                                <mtd>
+                                  <mfrac>
+                                    <mn>1</mn>
+                                    <mn>2</mn>
+                                  </mfrac>
+                                  <mo>+</mo>
+                                  <mfrac>
+                                    <mn>1</mn>
+                                    <mn>3</mn>
+                                  </mfrac>
+                                  <mo>=</mo>
+                                </mtd>
+                              </mtr>
+                            </mtable>
+                          </mrow>
+                        </mstyle>
+                      </math>
+
+
+                </div>
+                
+            
+            </div>
+                </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class = "col">Рівняння  </div>
+            <div class = "col">
+                <div class = "sel">Вирішіть рівняння</div>
+            </div>
+            <div class="col">
+                <div class="tasks">
+                    <div title="x=1">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <mstyle displaystyle="true" scriptlevel="0">
+                            <mrow data-mjx-texclass="ORD">
+                                <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                <mtr>
+                                    <mtd>
+                                    <mi>x</mi>
+                                    <mo>+</mo>
+                                    <mn>2</mn>
+                                    <mo>=</mo>
+                                    <mn>5</mn>
+                                    </mtd>
+                                </mtr>
+                                </mtable>
+                            </mrow>
+                            </mstyle>
+                        </math>
+                    </div>
+                    <div title="x=4">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <mstyle displaystyle="true" scriptlevel="0">
+                              <mrow data-mjx-texclass="ORD">
+                                <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                  <mtr>
+                                    <mtd>
+                                      <mn>2</mn>
+                                      <mi>x</mi>
+                                      <mo>&#x2212;</mo>
+                                      <mn>2</mn>
+                                      <mo>=</mo>
+                                      <mn>6</mn>
+                                    </mtd>
+                                  </mtr>
+                                </mtable>
+                              </mrow>
+                            </mstyle>
+                          </math>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">Система рівнянь  </div>
+            <div class = "col">
+                <div class = "sel">Вирішіть систему рівнянь</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                    <div title="x=3, y=1">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <mstyle displaystyle="true" scriptlevel="0">
+                          <mrow data-mjx-texclass="ORD">
+                            <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                              <mtr>
+                                <mtd>
+                                  <mrow data-mjx-texclass="INNER">
+                                    <mo data-mjx-texclass="OPEN">{</mo>
+                                    <mtable columnspacing="1em" rowspacing="4pt">
+                                      <mtr>
+                                        <mtd>
+                                          <mi>x</mi>
+                                          <mo>+</mo>
+                                          <mi>y</mi>
+                                          <mo>=</mo>
+                                          <mn>4</mn>
+                                        </mtd>
+                                      </mtr>
+                                      <mtr>
+                                        <mtd>
+                                          <mi>x</mi>
+                                          <mo>&#x2212;</mo>
+                                          <mi>y</mi>
+                                          <mo>=</mo>
+                                          <mn>2</mn>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                    <mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo>
+                                  </mrow>
+                                </mtd>
+                              </mtr>
+                            </mtable>
+                          </mrow>
+                        </mstyle>
+                      </math>
+                      </div>
+                      <div  title="x=5, y=1">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <mstyle displaystyle="true" scriptlevel="0">
+                              <mrow data-mjx-texclass="ORD">
+                                <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                  <mtr>
+                                    <mtd>
+                                      <mrow data-mjx-texclass="INNER">
+                                        <mo data-mjx-texclass="OPEN">{</mo>
+                                        <mtable columnspacing="1em" rowspacing="4pt">
+                                          <mtr>
+                                            <mtd>
+                                              <mi>x</mi>
+                                              <mo>+</mo>
+                                              <mi>y</mi>
+                                              <mo>=</mo>
+                                              <mn>6</mn>
+                                            </mtd>
+                                          </mtr>
+                                          <mtr>
+                                            <mtd>
+                                              <mi>x</mi>
+                                              <mo>&#x2212;</mo>
+                                              <mi>y</mi>
+                                              <mo>=</mo>
+                                              <mn>4</mn>
+                                            </mtd>
+                                          </mtr>
+                                        </mtable>
+                                        <mo data-mjx-texclass="CLOSE" fence="true" stretchy="true" symmetric="true"></mo>
+                                      </mrow>
+                                    </mtd>
+                                  </mtr>
+                                </mtable>
+                              </mrow>
+                            </mstyle>
+                          </math>
+                      </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">Многочлен зі ступенем  </div>
+            <div class = "col">
+                <div class = "sel">Спростіть многочлен</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                    <div title = "a^11">
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <mstyle displaystyle="true" scriptlevel="0">
+                          <mrow data-mjx-texclass="ORD">
+                            <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                              <mtr>
+                                <mtd>
+                                  <msup>
+                                    <mi>a</mi>
+                                    <mrow data-mjx-texclass="ORD">
+                                      <mn>2</mn>
+                                    </mrow>
+                                  </msup>
+                                  <msup>
+                                    <mi>a</mi>
+                                    <mrow data-mjx-texclass="ORD">
+                                      <mn>8</mn>
+                                    </mrow>
+                                  </msup>
+                                  <mi>a</mi>
+                                </mtd>
+                              </mtr>
+                            </mtable>
+                          </mrow>
+                        </mstyle>
+                      </math>
+                    </div>
+                    <div title = "b^6">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                            <mstyle displaystyle="true" scriptlevel="0">
+                              <mrow data-mjx-texclass="ORD">
+                                <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                  <mtr>
+                                    <mtd>
+                                      <mo stretchy="false">(</mo>
+                                      <msup>
+                                        <mi>b</mi>
+                                        <mrow data-mjx-texclass="ORD">
+                                          <mn>3</mn>
+                                        </mrow>
+                                      </msup>
+                                      <msup>
+                                        <mo stretchy="false">)</mo>
+                                        <mn>2</mn>
+                                      </msup>
+                                    </mtd>
+                                  </mtr>
+                                </mtable>
+                              </mrow>
+                            </mstyle>
+                          </math>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col">Квадратний корінь </div>
+            <div class = "col">
+                <div class = "sel">Обрахуйте квадратний корінь</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "8">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                    <mtr>
+                                        <mtd>
+                                        <msqrt>
+                                            <mn>64</mn>
+                                        </msqrt>
+                                        
+                                        </mtd>
+                                    </mtr>
+                                    </mtable>
+                                </mrow>
+                                </mstyle>
+                            </math>
+                        </div>
+                        <div title = "12">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <msqrt>
+                                            <mn>144</mn>
+                                          </msqrt>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>  
+        <div class="row">
+            <div class = "col">Спрощення многочлена</div>
+            <div class = "col">
+                <div class = "sel">Спростіть многочлен</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "4a^2+6ab+2b^2">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                    <mtr>
+                                        <mtd>
+                                        <mo stretchy="false">(</mo>
+                                        <mn>2</mn>
+                                        <mi>a</mi>
+                                        <mo>+</mo>
+                                        <mi>b</mi>
+                                        <mo stretchy="false">)</mo>
+                                        <mo stretchy="false">(</mo>
+                                        <mn>2</mn>
+                                        <mi>a</mi>
+                                        <mo>+</mo>
+                                        <mn>2</mn>
+                                        <mi>b</mi>
+                                        <mo stretchy="false">)</mo>
+                                        </mtd>
+                                    </mtr>
+                                    </mtable>
+                                </mrow>
+                                </mstyle>
+                            </math>
+                        </div>
+                        <div title = "81-y^2">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <mo stretchy="false">(</mo>
+                                          <mn>9</mn>
+                                          <mo>&#x2212;</mo>
+                                          <mi>y</mi>
+                                          <mo stretchy="false">)</mo>
+                                          <mo stretchy="false">(</mo>
+                                          <mn>9</mn>
+                                          <mo>+</mo>
+                                          <mi>y</mi>
+                                          <mo stretchy="false">)</mo>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>  
+
+        <div class="row">
+            <div class = "col">Рівняння із коренем</div>
+            <div class = "col">
+                <div class = "sel">Вирішіть рівняння</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "x=8">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <msqrt>
+                                            <mn>2</mn>
+                                            <mi>x</mi>
+                                          </msqrt>
+                                          <mo>&#x2212;</mo>
+                                          <mn>4</mn>
+                                          <mo>=</mo>
+                                          <mn>0</mn>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>
+
+
+                        </div>
+                        <div title = "x=10">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <msqrt>
+                                            <mn>3</mn>
+                                            <mi>x</mi>
+                                            <mo>+</mo>
+                                            <mn>6</mn>
+                                          </msqrt>
+                                          <mo>=</mo>
+                                          <mn>6</mn>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>  
+        <div class="row">
+            <div class = "col"> <div class = "sel">Теорема Піфагора</div></div>
+            <div class = "col">
+                <div class = "sel"><img src = "img/sqtr3.png" width="50px"></div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "c=5">
+                            a = 3, b = 4, c - ?
+
+                        </div>
+                        <div title = "a=5">
+                            c = 13, b = 12, a - ?   
+                        
+                        
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>  
+        <div class="row">
+            <div class = "col"> <div class = "sel">Тригонометричні функції</div></div>
+            <div class = "col">
+                <div class = "sel norow">Чому дорівнює  &nbsp;&nbsp;&nbsp; <i>sin(a)</i> <img src = "img/sina3.png" width = 90px></div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "sin(a)=1/2">
+                            a = 5, c = 10
+
+                        </div>
+                        <div title = "sin(a)=sqrt(3)/2">
+                            b = 6, c = 12
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>  
+        <div class="row">
+            <div class = "col">Логарифмічні функції</div>
+            <div class = "col">
+                <div class = "sel">Чому дорівнює логарифм</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "2">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <mi>l</mi>
+                                          <mi>o</mi>
+                                          <msub>
+                                            <mi>g</mi>
+                                            <mrow data-mjx-texclass="ORD">
+                                              <mn>6</mn>
+                                            </mrow>
+                                          </msub>
+                                          <mn>36</mn>
+                                          <mo>=</mo>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>
+
+
+                        </div>
+                        <div title = "1/2">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <mi>l</mi>
+                                          <mi>o</mi>
+                                          <msub>
+                                            <mi>g</mi>
+                                            <mrow data-mjx-texclass="ORD">
+                                              <mn>2</mn>
+                                            </mrow>
+                                          </msub>
+                                          <msqrt>
+                                            <mn>2</mn>
+                                          </msqrt>
+                                          <mo>=</mo>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div> 
+        <div class="row">
+            <div class = "col">Похідні</div>
+            <div class = "col">
+                <div class = "sel">Чому дорівнює поіхідна</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "2x+2">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <mo stretchy="false">(</mo>
+                                          <msup>
+                                            <mi>x</mi>
+                                            <mrow data-mjx-texclass="ORD">
+                                              <mn>2</mn>
+                                            </mrow>
+                                          </msup>
+                                          <mo>+</mo>
+                                          <mn>2</mn>
+                                          <mi>x</mi>
+                                          <msup>
+                                            <mo stretchy="false">)</mo>
+                                            <mrow data-mjx-texclass="ORD">
+                                              <msup>
+                                                <mi></mi>
+                                                <mo data-mjx-alternate="1">&#x2032;</mo>
+                                              </msup>
+                                            </mrow>
+                                          </msup>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>
+
+
+                        </div>
+                        <div title = "1/(2*sqrt(x))">
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                <mstyle displaystyle="true" scriptlevel="0">
+                                  <mrow data-mjx-texclass="ORD">
+                                    <mtable rowspacing=".5em" columnspacing="1em" displaystyle="true">
+                                      <mtr>
+                                        <mtd>
+                                          <mo stretchy="false">(</mo>
+                                          <msqrt>
+                                            <mi>x</mi>
+                                          </msqrt>
+                                          <msup>
+                                            <mo stretchy="false">)</mo>
+                                            <mrow data-mjx-texclass="ORD">
+                                              <msup>
+                                                <mi></mi>
+                                                <mo data-mjx-alternate="1">&#x2032;</mo>
+                                              </msup>
+                                            </mrow>
+                                          </msup>
+                                        </mtd>
+                                      </mtr>
+                                    </mtable>
+                                  </mrow>
+                                </mstyle>
+                              </math>                        
+                            </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>  
+        <div class="row">
+            <div class = "col">Ймовірності</div>
+            <div class = "col">
+                <div class = "sel">В шухляді лежать картки із номерами від 1 до 10. Яка ймовірність витягти:</div>
+            </div>
+            <div class="col">
+                <div class="formula">
+                    <div class="tasks">
+                        <div title = "1/10 або 0,1">
+                          Картку з номером 10
+                        </div>
+                        <div title = "1/90 або 0,011111">
+                            Картку з номером 10, а потім картку з номером 9
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+                <select name="level1" id="level1" class="form-select">
+                    <option>Не знаю</option>
+                    <option>Щось знаю</option>
+                    <option>Знаю добре</option>
+                </select>
+            </div>
+        </div>  
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
