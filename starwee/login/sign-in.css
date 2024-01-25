@@ -23,3 +23,23 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.bitcoin-btn {
+  color: white;
+  background-color: #ffc107;
+}
+
+.Sat-btn{
+  color: white;
+  background-color: #fd7e14;
+}
+
+.Nostr-btn{
+  color: white;
+  background-color: #6f42c1;
+}
+
+.Demo-btn{
+  color: white;
+  background-color: gray;
+}
