@@ -1,0 +1,35 @@
+.row{
+    display: flex;
+}
+.head_row div{
+    text-align: center;
+
+}
+.tasks div:hover{
+    background: rgba(100, 100, 100, 0.2);
+    cursor: pointer;
+}
+.name{
+
+}
+.sel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.norow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.formula{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.tasks{
+    display: flex;
+    justify-content: space-between;
+}

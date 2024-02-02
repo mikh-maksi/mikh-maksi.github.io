@@ -1,0 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.chapter div p{
+    font-weight: bold;
+}
