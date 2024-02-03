@@ -1,5 +1,7 @@
 .row{
     display: flex;
+    border:1px solid;
+    margin: 2px 0px;
 }
 .head_row div{
     text-align: center;
@@ -32,4 +34,14 @@
 .tasks{
     display: flex;
     justify-content: space-between;
+}
+.know_no{
+    background: red;
+}
+
+.know_few{
+    background: yellow;
+}
+.know{
+    background: green;
 }
