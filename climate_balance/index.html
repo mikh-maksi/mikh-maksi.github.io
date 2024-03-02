@@ -5,69 +5,298 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Mobilität</h2>
-    <select name="" id="sel">
-        <option value="0">Autobesitz Kleinwagen LD 12J</option>
-        <option value="1">Autobesitz Mittelklassewagen</option>
-        <option value="2">Autobesitz SUV</option>
-        <option value="3">Besitz E-Autobatterie 20kWh</option>
-        <option value="4">Besitz E-Autobatterie 40kWh</option>
-        <option value="5">Besitz E-Autobatterie 80kWh</option>
-        <option value="6">Autopendeln Kleinwagen 2x 11km/d</option>
-        <option value="7">Autopendeln Mittelkl 2x 11km/d</option>
-        <option value="8">Autopendeln   SUV  2x 11km/d</option>
-        <option value="9">Autopendeln Kleinwagen 2x 25km/d</option>
-        <option value="10">Autopendeln Mittelkl 2x 25km/d    </option>
-        <option value="11">Autopendeln   SUV  2x 25km/d</option>
-        <option value="12">Autopendeln Kleinwagen 2x 50km/d</option>
-        <option value="13">Autopendeln Mittelkl 2x 50km/d</option>
-        <option value="14">Autopendeln   SUV  2x 50km/d</option>
-        <option value="15">E-Autopendeln 2x11km/d o PV klein</option>
-        <option value="16">E-Autopendeln 2x50km/d o PV klein</option>
-        <option value="17">E-Autopendeln 2x11km/d o PV SUV</option>
-        <option value="18">E-Autopendeln 2x25km/d o PV SUV</option>
-        <option value="19">E-Autopendeln 2x50km/d o PV SUV</option>
-        <option value="20">Mopedpendeln 2x 11km/d</option>
-        <option value="21">Mopedpendeln 2x 25km/d</option>
-        <option value="22">E-Roller 2x 11km/d</option>
-        <option value="23">E-Roller 2x 25km/d</option>
-        <option value="24">Fahrradpendeln 2x 11km/d</option>
-        <option value="25">Pedelecpendeln 2x11km/d ohne PV/Öko</option>
-        <option value="26">Öffipendeln 2x 11km/d</option>
-        <option value="27">Öffipendeln 2x 25km/d</option>
-        <option value="28">Öffipendeln 2x 50km/d</option>
-    </select>
-    <p>Km/a:<span id = "mobility"></span></p>
-    <p>kg CO2/a:<span id = "kg_co"></span></p>
-    <p>Modell g:<span id = "modell_g"></span></p>
+    <div class="wrapper">
+            <h2>Mobilität</h2>
+    <div class="mobility">
+        <div class="auto">
+            <h3>Auto</h3>
+            <select name="" id="sel">
+                <option value="0">Autobesitz Kleinwagen LD 12J</option>
+                <option value="1">Autobesitz Mittelklassewagen</option>
+                <option value="2">Autobesitz SUV</option>
+                <option value="3">Besitz E-Autobatterie 20kWh</option>
+                <option value="4">Besitz E-Autobatterie 40kWh</option>
+                <option value="5">Besitz E-Autobatterie 80kWh</option>
+            </select>
 
-    <br>
-    <img src="img/eco01.png" alt="" id = "eco_img" width = 300>
+            <p>Km/a:<span id = "mobility"></span></p>
+            <p>kg CO2/a:<span id = "kg_co"></span></p>
+            <p>Modell g:<span id = "modell_g"></span></p>
+
+            <br>
+            <img src="img/eco01.png" alt="" id = "eco_img" width = 270>
+        </div>  
+        <div class="autopendeln">
+            <h3>Autopendeln</h3>
+            <select name="" id="sel_autopendeln">
+                <option value="0">Autopendeln Kleinwagen 2x 11km/d</option>
+                <option value="1">Autopendeln Mittelkl 2x 11km/d</option>
+                <option value="2">Autopendeln   SUV  2x 11km/d</option>
+                <option value="3">Autopendeln Kleinwagen 2x 25km/d</option>
+                <option value="4">Autopendeln Mittelkl 2x 25km/d    </option>
+                <option value="5">Autopendeln   SUV  2x 25km/d</option>
+                <option value="6">Autopendeln Kleinwagen 2x 50km/d</option>
+                <option value="7">Autopendeln Mittelkl 2x 50km/d</option>
+                <option value="8">Autopendeln   SUV  2x 50km/d</option>
+                <option value="9">E-Autopendeln 2x11km/d o PV klein</option>
+                <option value="10">E-Autopendeln 2x50km/d o PV klein</option>
+                <option value="11">E-Autopendeln 2x11km/d o PV SUV</option>
+                <option value="12">E-Autopendeln 2x25km/d o PV SUV</option>
+                <option value="13">E-Autopendeln 2x50km/d o PV SUV</option>
+                <option value="14">Mopedpendeln 2x 11km/d</option>
+                <option value="15">Mopedpendeln 2x 25km/d</option>
+                <option value="16">E-Roller 2x 11km/d</option>
+                <option value="17">E-Roller 2x 25km/d</option>
+                <option value="18">Fahrradpendeln 2x 11km/d</option>
+                <option value="19">Pedelecpendeln 2x11km/d ohne PV/Öko</option>
+                <option value="20">Öffipendeln 2x 11km/d</option>
+                <option value="21">Öffipendeln 2x 25km/d</option>
+                <option value="22">Öffipendeln 2x 50km/d</option>
+            </select>
+        <br>
+          
+            <p>Km/a:<span id = "mobility_autopendeln"></span></p>
+            <p>kg CO2/a:<span id = "kg_co_autopendeln"></span></p>
+            <p>Modell g:<span id = "modell_g_autopendeln"></span></p>
+            <br>
+            <img src="img/road01.jpg" alt="" id = "autopendeln_img" width = 270>
+        </div>
+        <div class="mopedpendeln">
+            <h3>Mopedpendeln</h3>
+            <select name="" id="sel_mopedpendeln">
+                <option value="14">Mopedpendeln 2x 11km/d</option>
+                <option value="15">Mopedpendeln 2x 25km/d</option>
+            </select>
+        <br>
+          
+            <p>Km/a:<span id = "mobility_mopedpendeln"></span></p>
+            <p>kg CO2/a:<span id = "kg_co_mopedpendeln"></span></p>
+            <p>Modell g:<span id = "modell_g_mopedpendeln"></span></p>
+            <br>
+            <img src="img/road14.jpg" alt="" id = "mopedpendeln_img" width = 270>
+        </div>
+        <div class="erollerpendeln">
+            <h3>E-Roller</h3>
+            <select name="" id="sel_erollerpendeln">
+                <option value="16">E-Roller 2x 11km/d</option>
+                <option value="17">E-Roller 2x 25km/d</option>
+            </select>
+        <br>
+          
+            <p>Km/a:<span id = "mobility_erollerpendeln"></span></p>
+            <p>kg CO2/a:<span id = "kg_co_erollerpendeln"></span></p>
+            <p>Modell g:<span id = "modell_g_erollerpendeln"></span></p>
+            <br>
+            <img src="img/road16.jpg" alt="" id = "erollerpendeln_img" width = 270>
+        </div>
+        <div class="fahrradpendeln">
+            <h3>Fahrradpendeln</h3>
+            <select name="" id="sel_fahrradpendeln">
+
+                <option value="18">Fahrradpendeln 2x 11km/d</option>
+                <option value="19">Pedelecpendeln 2x11km/d ohne PV/Öko</option>
+
+            </select>
+        <br>
+          
+            <p>Km/a:<span id = "mobility_fahrradpendeln"></span></p>
+            <p>kg CO2/a:<span id = "kg_co_fahrradpendeln"></span></p>
+            <p>Modell g:<span id = "modell_g_fahrradpendeln"></span></p>
+            <br>
+            <img src="img/road18.jpg" alt="" id = "fahrradpendeln_img" width = 270>
+        </div>
+
+        <div class="offipendeln">
+            <h3>Öffipendeln</h3>
+            <select name="" id="sel_offipendeln">   
+                <option value="20">Öffipendeln 2x 11km/d</option>
+                <option value="21">Öffipendeln 2x 25km/d</option>
+                <option value="22">Öffipendeln 2x 50km/d</option>
+            </select>
+        <br>
+          
+            <p>Km/a:<span id = "mobility_offipendeln"></span></p>
+            <p>kg CO2/a:<span id = "kg_co_offipendeln"></span></p>
+            <p>Modell g:<span id = "modell_g_offipendeln"></span></p>
+            <br>
+            <img src="img/road20.jpg" alt="" id = "offipendeln_img" width = 270>
+        </div>
+
+
+    </div>
+</div>
+
+
 <script>
     
-    picture_array = ["mob01.jpg","mob02.jpg","mob03.jpg","mob04.jpg","mob05.jpg","mob06.jpg","mob07.png"]
+    picture_array = ["mob01.jpg","mob02.jpg","mob03.jpg","mob04.jpg","mob05.jpg","mob06.jpg","mob08.jpg","mob08.jpg"]
     values_array= [4600,8800,13000,20,40,80,5060,5060,5060,11500,11500,11500,23000,23000,23000,5060,11500,23000,5060,11500,23000,5060,11500,5060,11500,5060,5060,5060,11500,23000]
     values_array_kg_co = [307,587,867,100,200,400,864,1030,1288,1964,2341,2926,3929,4682,5853,172,391,782,253,575,1150,676,1536,172,391,5,53,127,253,437]
     values_array_g = [153,293,433,50,100,200,432,515,644,982,1171,1463,1964,2341,2926,86,196,391,127,288,575,338,768,86,196,3,27,63,127,219]
+
     
+    picture_autopendeln_array = ["road01.jpg","road02.jpg","road03.jpg","road04.jpg","road05.jpg","road06.jpg","road07.jpg","road08.jpg","road09.jpg","road10.jpg","road11.jpg","road12.jpg","road13.jpg","road13_.jpg","road14.jpg","road15.jpg","road16.jpg","road17.jpg","road18.jpg","road19.jpg","road20.jpg","road21.jpg","road22.jpg"]
+    values_autopendeln_array= [5060,5060,5060,11500,11500,11500,23000,23000,23000,5060,11500,23000,5060,11500,23000,5060,11500,5060,11500,5060,5060,5060,11500,23000]
+    values_autopendeln_array_kg_co = [864,1030,1288,1964,2341,2926,3929,4682,5853,172,391,782,253,575,1150,676,1536,172,391,5,53,127,253,437]
+    values_autopendeln_array_g = [432,515,644,982,1171,1463,1964,2341,2926,86,196,391,127,288,575,338,768,86,196,3,27,63,127,219]
+
+
     res_value = document.getElementById("mobility")
     kg_co_value = document.getElementById("kg_co")
     modell_g_value = document.getElementById("modell_g")
 
+    res_autopendeln_value = document.getElementById("mobility_autopendeln")
+    kg_co_autopendeln_value = document.getElementById("kg_co_autopendeln")
+    modell_g_autopendeln_value = document.getElementById("modell_g_autopendeln")
+
+    res_mopedpendeln_value = document.getElementById("mobility_mopedpendeln")
+    kg_co_mopedpendeln_value = document.getElementById("kg_co_mopedpendeln")
+    modell_g_mopedpendeln_value = document.getElementById("modell_g_mopedpendeln")
+
+    res_erollerpendeln_value = document.getElementById("mobility_erollerpendeln")
+    kg_co_erollerpendeln_value = document.getElementById("kg_co_erollerpendeln")
+    modell_g_erollerpendeln_value = document.getElementById("modell_g_erollerpendeln")
+
+    res_fahrradpendeln_value = document.getElementById("mobility_fahrradpendeln")
+    kg_co_fahrradpendeln_value = document.getElementById("kg_co_fahrradpendeln")
+    modell_g_fahrradpendeln_value = document.getElementById("modell_g_fahrradpendeln")
+    
+
+    res_offipendeln_value = document.getElementById("mobility_offipendeln")
+    kg_co_offipendeln_value = document.getElementById("kg_co_offipendeln")
+    modell_g_offipendeln_value = document.getElementById("modell_g_offipendeln")
+
+
+
+
     eco_img_element = document.getElementById("eco_img")
+    eco_img_autopendeln_element = document.getElementById("autopendeln_img")
+    eco_img_mopedpendeln_element = document.getElementById("mopedpendeln_img")
+    eco_img_erollerpendeln_element = document.getElementById("erollerpendeln_img")
+    eco_img_fahrradpendeln_element = document.getElementById("fahrradpendeln_img")
+    eco_img_offipendeln_element = document.getElementById("offipendeln_img")
+
 
     let sel = document.getElementById("sel")
 
+    let sel_autopendeln = document.getElementById("sel_autopendeln")
+
+    let sel_mopedendeln = document.getElementById("sel_mopedpendeln")
+    let sel_erollerpendeln = document.getElementById("sel_erollerpendeln")
+    let sel_fahhradpendeln = document.getElementById("sel_fahhradpendeln")
+    let sel_offipendeln = document.getElementById("sel_offipendeln")
+
+
     num = 0
+    num_autopendeln=0
+    num_mopedpendeln=14
+    num_erollerpendeln=16
+    num_fahrradpendeln=18
+    num_offipendeln=20
+
     eco_img_element.src = "img/"+picture_array[num]
     res_value.innerHTML = values_array[num]
     kg_co_value.innerHTML = values_array_kg_co[num]
     modell_g_value.innerHTML = values_array_g[num]
 
+    eco_img_autopendeln_element.src = "img/"+picture_autopendeln_array[num_autopendeln]
+    res_autopendeln_value.innerHTML = values_array[num_autopendeln]
+    kg_co_autopendeln_value.innerHTML = values_array_kg_co[num_autopendeln]
+    modell_g_autopendeln_value.innerHTML = values_array_g[num_autopendeln]
+
+    eco_img_mopedpendeln_element.src = "img/"+picture_autopendeln_array[num_mopedpendeln]
+    res_mopedpendeln_value.innerHTML = values_array[num_mopedpendeln]
+    kg_co_mopedpendeln_value.innerHTML = values_array_kg_co[num_mopedpendeln]
+    modell_g_mopedpendeln_value.innerHTML = values_array_g[num_mopedpendeln]
+
+    eco_img_erollerpendeln_element.src = "img/"+picture_autopendeln_array[num_erollerpendeln]
+    res_erollerpendeln_value.innerHTML = values_array[num_erollerpendeln]
+    kg_co_erollerpendeln_value.innerHTML = values_array_kg_co[num_erollerpendeln]
+    modell_g_erollerpendeln_value.innerHTML = values_array_g[num_erollerpendeln]
+
+    eco_img_fahrradpendeln_element.src = "img/"+picture_autopendeln_array[num_fahrradpendeln]
+    res_fahrradpendeln_value.innerHTML = values_array[num_fahrradpendeln]
+    kg_co_fahrradpendeln_value.innerHTML = values_array_kg_co[num_fahrradpendeln]
+    modell_g_fahrradpendeln_value.innerHTML = values_array_g[num_fahrradpendeln]
+
+    eco_img_offipendeln_element.src = "img/"+picture_autopendeln_array[num_offipendeln]
+    res_offipendeln_value.innerHTML = values_array[num_offipendeln]
+    kg_co_offipendeln_value.innerHTML = values_array_kg_co[num_offipendeln]
+    modell_g_offipendeln_value.innerHTML = values_array_g[num_offipendeln]
+
+
+
 
     sel.addEventListener("change",change_fnc)
+    sel_autopendeln.addEventListener("change",change_sel_autopendeln_fnc)
+    sel_mopedendeln.addEventListener("change",change_sel_mopedpendeln_fnc)
+    sel_erollerpendeln.addEventListener("change",change_sel_erollerpendeln_fnc)
+    sel_fahrradpendeln.addEventListener("change",change_sel_fahrradpendeln_fnc)
+    sel_offipendeln.addEventListener("change",change_sel_offipendeln_fnc)
+
+
+    
+
+    function change_sel_offipendeln_fnc (event){
+        console.log(parseInt(sel_offipendeln.value))
+        let num_offipendeln = parseInt(sel_offipendeln.value)
+        console.log(picture_array[num_offipendeln])
+        eco_img_offipendeln_element.src = "img/"+picture_autopendeln_array[num_offipendeln]
+        res_offipendeln_value.innerHTML = values_autopendeln_array[num_offipendeln]
+        kg_co_offipendeln_value.innerHTML = values_autopendeln_array_kg_co[num_offipendeln]
+        modell_g_offipendeln_value.innerHTML = values_autopendeln_array_g[num_offipendeln]
+
+    }
+
+    function change_sel_fahrradpendeln_fnc (event){
+        console.log(parseInt(sel_fahrradpendeln.value))
+        let num_fahrradpendeln = parseInt(sel_fahrradpendeln.value)
+        console.log(picture_array[num_fahrradpendeln])
+        eco_img_fahrradpendeln_element.src = "img/"+picture_autopendeln_array[num_fahrradpendeln]
+        res_fahrradpendeln_value.innerHTML = values_autopendeln_array[num_fahrradpendeln]
+        kg_co_fahrradpendeln_value.innerHTML = values_autopendeln_array_kg_co[num_fahrradpendeln]
+        modell_g_fahrradpendeln_value.innerHTML = values_autopendeln_array_g[num_fahrradpendeln]
+
+    }
+
+
+    function change_sel_erollerpendeln_fnc (event){
+        console.log(parseInt(sel_erollerpendeln.value))
+        let num_erollerpendeln = parseInt(sel_erollerpendeln.value)
+        console.log(picture_array[num_erollerpendeln])
+        eco_img_erollerpendeln_element.src = "img/"+picture_autopendeln_array[num_erollerpendeln]
+        res_erollerpendeln_value.innerHTML = values_autopendeln_array[num_erollerpendeln]
+        kg_co_erollerpendeln_value.innerHTML = values_autopendeln_array_kg_co[num_erollerpendeln]
+        modell_g_erollerpendeln_value.innerHTML = values_autopendeln_array_g[num_erollerpendeln]
+
+    }
+
+
+    function change_sel_mopedpendeln_fnc (event){
+        console.log(parseInt(sel_mopedpendeln.value))
+        let num_mopedpendeln = parseInt(sel_mopedpendeln.value)
+        console.log(picture_array[num_mopedpendeln])
+        eco_img_mopedpendeln_element.src = "img/"+picture_autopendeln_array[num_mopedpendeln]
+        res_mopedpendeln_value.innerHTML = values_autopendeln_array[num_mopedpendeln]
+        kg_co_mopedpendeln_value.innerHTML = values_autopendeln_array_kg_co[num_mopedpendeln]
+        modell_g_mopedpendeln_value.innerHTML = values_autopendeln_array_g[num_mopedpendeln]
+
+    }
+
+    function change_sel_autopendeln_fnc (event){
+        console.log(parseInt(sel_autopendeln.value))
+        let num_autopendeln = parseInt(sel_autopendeln.value)
+        console.log(picture_array[num_autopendeln])
+        eco_img_autopendeln_element.src = "img/"+picture_autopendeln_array[num_autopendeln]
+        res_autopendeln_value.innerHTML = values_autopendeln_array[num_autopendeln]
+        kg_co_autopendeln_value.innerHTML = values_autopendeln_array_kg_co[num_autopendeln]
+        modell_g_autopendeln_value.innerHTML = values_autopendeln_array_g[num_autopendeln]
+
+    }
+    
     function change_fnc(event){
         // console.log(event)
         console.log(parseInt(sel.value))
