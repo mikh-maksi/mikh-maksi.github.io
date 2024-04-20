@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        url = 'https://innovations.kh.ua/climawage/wp-json/wp/v2/consumption/'
+        let response =  fetch(url);
+        
+        if (response.ok) { // если HTTP-статус в диапазоне 200-299
+          // получаем тело ответа (см. про этот метод ниже)
+          let json =  response.json();
+        } else {
+          alert("Ошибка HTTP: " + response.status);
+        }
+        </script>
+</body>
+</html>
