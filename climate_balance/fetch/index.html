@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let user = {
+            json: 'John',
+            surname: 'Smith'
+        };
+
+        async function f() {
+            let response = fetch('https://innovations.kh.ua/climawage/wp-json/wp/v2/consumption', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+                body: JSON.stringify(user)
+            });
+            let resp = await response;
+            return resp;
+        }
+        let resp = f();
+
+        console.log(resp);
+        // let result = response.json();
+        // alert(result.message);
+    </script>
+</body>
+
+</html>
