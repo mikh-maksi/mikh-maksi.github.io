@@ -10,7 +10,13 @@
     <script>
 fetch('https://innovations.kh.ua/climawage/wp-json/wp/v2/consumption')
   .then(response => response.json())
-  .then(commits => console.log(commits));
+  .then(
+    commits => work(commits)
+  );
+  function work(parameter){
+    console.log("ok");
+    console.log(parameter);
+  }
 
     </script>
 </body>
